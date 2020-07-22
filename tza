@@ -1,0 +1,6 @@
+#!/bin/bash
+
+find /usr/share/zoneinfo -not -type d |
+xargs zdump                           |
+grep " $1$"
+
